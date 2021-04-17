@@ -1,0 +1,44 @@
+{
+  "name": "@example/ui-core",
+  "version": "1.4.0",
+  "description": "Core React components library.",
+  "license": "ISC",
+  "engines": {
+    "node": ">=14.15"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib/*.otf",
+    "lib/index.*",
+    "lib/styles.*"
+  ],
+  "main": "lib/index.js",
+  "module": "src/index.ts",
+  "types": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:igorpupkinable/dts-bundle-generator-issues-50.git"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {
+    "@types/classnames": "^2.2.11",
+    "@types/react": "^16.9.49",
+    "classnames": "^2.2.6",
+    "react": "^16.14.0"
+  },
+  "peerDependenciesMeta": {
+    "@types/classnames": {
+      "optional": true
+    },
+    "@types/react": {
+      "optional": true
+    }
+  },
+  "scripts": {
+    "build:types": "dts-bundle-generator --config dts.js"
+  }
+}

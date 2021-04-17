@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "declarationDir": "./lib",
+  },
+  "extends": "../../tsconfig.common.json",
+}

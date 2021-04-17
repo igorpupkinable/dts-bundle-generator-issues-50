@@ -1,0 +1,37 @@
+{
+  "description": "Example monorepo for dts-bundle-generator issue #50",
+  "homepage": "https://github.com/timocov/dts-bundle-generator/issues/50",
+  "license": "ISC",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:igorpupkinable/dts-bundle-generator-issues-50.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.13.8",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/preset-env": "^7.13.9",
+    "@babel/preset-react": "^7.12.13",
+    "@babel/preset-typescript": "^7.13.0",
+    "@prisma-capacity/babel-plugin-react-display-name": "^1.0.6",
+    "@types/classnames": "^2.2.11",
+    "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.9",
+    "babel-loader": "^8.2.2",
+    "classnames": "^2.2.6",
+    "dts-bundle-generator": "^5.7.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "typescript": "^4.2.2",
+  },
+  "optionalDependencies": {},
+  "scripts": {
+    "check:types": "tsc --build",
+    "clean": "yarn run check:types --clean",
+    "emit:types": "yarn run check:types && yarn workspaces run build:types",
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}

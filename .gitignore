@@ -1,0 +1,8 @@
+# Directories to ignore
+lib/
+node_modules/
+.vscode
+
+# Files to ignore
+tsconfig.tsbuildinfo
+*.log

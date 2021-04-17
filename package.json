@@ -23,13 +23,13 @@
     "dts-bundle-generator": "^5.7.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "typescript": "^4.2.2",
+    "typescript": "^4.2.2"
   },
   "optionalDependencies": {},
   "scripts": {
     "check:types": "tsc --build",
     "clean": "yarn run check:types --clean",
-    "emit:types": "yarn run check:types && yarn workspaces run build:types",
+    "emit:types": "yarn run check:types && yarn workspaces run build:types"
   },
   "workspaces": [
     "packages/*"

@@ -1,7 +1,7 @@
 {
-  "name": "@example/ui-core",
-  "version": "1.4.0",
-  "description": "Core React components library.",
+  "name": "@example/fe-components",
+  "version": "0.1.0",
+  "description": "Project specific React components library.",
   "license": "ISC",
   "engines": {
     "node": ">=14.15"
@@ -11,9 +11,7 @@
     "test": "__tests__"
   },
   "files": [
-    "lib/*.otf",
-    "lib/index.*",
-    "lib/styles.*"
+    "lib/index.*"
   ],
   "main": "lib/index.js",
   "module": "src/index.ts",
@@ -22,7 +20,9 @@
     "type": "git",
     "url": "git@github.com:igorpupkinable/dts-bundle-generator-issues-50.git"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@example/ui-core": "1"
+  },
   "devDependencies": {},
   "peerDependencies": {
     "@types/react": "^16.9.49",

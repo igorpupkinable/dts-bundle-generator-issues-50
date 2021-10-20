@@ -4,8 +4,6 @@ import React, {
   useCallback,
 } from 'react';
 
-import iconSrc from './icon.svg';
-
 export type CheckboxProps = {
   label: string;
   onChange: (value: boolean) => void;
@@ -30,10 +28,6 @@ const Checkbox: FC<CheckboxProps> = ({
         checked={Boolean(value)}
         onChange={handleChange}
         type="checkbox"
-      />
-      <img
-        alt="Checkbox icon"
-        src={iconSrc}
       />
       {label}
     </label>
